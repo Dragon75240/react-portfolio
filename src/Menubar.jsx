@@ -1,7 +1,8 @@
 import "./styles/Menubar.css";
-import { Menu, ConfigProvider, theme} from "antd";
+import { Menu, ConfigProvider, theme } from "antd";
+import { Link } from 'react-router-dom';
 
-const App = () => {
+const Menubar = ({ router }) => {
   const menuItems = [
     {
       key: "home",
@@ -16,7 +17,7 @@ const App = () => {
       label: "Cover",
     },
     {
-      key: "abtme",
+      key: "aboutme",
       label: "About Me",
     },
     {
@@ -38,7 +39,7 @@ const App = () => {
         { key: "six", label: "6th Grade" },
         { key: "seven", label: "7th Grade" },
         { key: "eight", label: "8th Grade" },
-{ key:"nine", label: "9th Grade"}
+        { key: "nine", label: "9th Grade" }
       ],
     },
     {
@@ -62,17 +63,18 @@ const App = () => {
 
     return (
       <Menu.Item key={item.key} icon={item.icon}>
-        {item.label}
+        <Link to={`/${item.key}`}>{item.label}</Link>
       </Menu.Item>
     );
   };
 
+
   return (<ConfigProvider
-theme={{algorithm: theme.darkAlgorithm}}>
+    theme={{ algorithm: theme.darkAlgorithm }}>
     <Menu mode="horizontal" className="menubar backdrop:inset-10">
       {menuItems.map(renderMenuItem)}
     </Menu></ConfigProvider>
   );
 };
 
-export default App;
+export default Menubar;
