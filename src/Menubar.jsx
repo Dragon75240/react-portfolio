@@ -1,12 +1,14 @@
+import { DownOutlined } from "@ant-design/icons";
 import "./styles/Menubar.css";
 import { Menu, ConfigProvider, theme } from "antd";
 import { Link } from 'react-router-dom';
 
-const Menubar = ({ router }) => {
+const Menubar = () => {
   const menuItems = [
     {
       key: "home",
       label: "Stevyn Shawcroft",
+      link: ""
     },
     {
       type: "divider",
@@ -15,36 +17,44 @@ const Menubar = ({ router }) => {
     {
       key: "cover",
       label: "Cover",
+      link: "home"
     },
     {
       key: "aboutme",
       label: "About Me",
+      link: "about",
     },
     {
       key: "hobbies",
       label: "Hobbies",
+      link: "hobbies"
     },
     {
       key: "links",
       label: "Links",
+      link: "links"
     },
     {
       key: "path",
       label: "Pathways",
+      link: "pathways"
     },
     {
       key: "career",
+      icon: <DownOutlined/>,
       label: "School Career",
+      link: "",
       children: [
-        { key: "six", label: "6th Grade" },
-        { key: "seven", label: "7th Grade" },
-        { key: "eight", label: "8th Grade" },
-        { key: "nine", label: "9th Grade" }
+        { key: "six", label: "6th Grade", link: "sixth-grade" },
+        { key: "seven", label: "7th Grade", link: "seventh-grade" },
+        { key: "eight", label: "8th Grade", link: "eight-grade" },
+        { key: "nine", label: "9th Grade", link: "ninth-grade" }
       ],
     },
     {
       key: "skill",
       label: "Skills",
+      link: "skills"
     },
   ];
 
@@ -63,7 +73,7 @@ const Menubar = ({ router }) => {
 
     return (
       <Menu.Item key={item.key} icon={item.icon}>
-        <Link to={`/${item.key}`}>{item.label}</Link>
+        <Link to={`/${item.link}`}>{item.label}</Link>
       </Menu.Item>
     );
   };

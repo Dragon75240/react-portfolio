@@ -1,7 +1,9 @@
+import '../styles/Home.css';
+
 const Home = () => {
-    return (<div>
-        
-    </div>)
+    return (
+        <div className="background" />
+    )
 }
 
 export default Home;

@@ -11,4 +11,9 @@
 
 html {
     font-family: 'Lato-Regular', sans-serif;
+    background-color: rgb(49, 39, 61);
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: rgb(212, 147, 212);
 }

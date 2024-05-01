@@ -1,0 +1,7 @@
+.background {
+    background-image: url(../assets/images/mountains.png);
+    background-size: cover;
+    background-position: center;
+    height: 37.5vh;
+    width: 100%;
+}
