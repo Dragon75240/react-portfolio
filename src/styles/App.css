@@ -1,16 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@font-face {
-    font-family: 'Lato-Regular';
-    src: url('/assets/Lato-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 html {
-    font-family: 'Lato-Regular', sans-serif;
+    font-family: 'Lato', sans-serif;
     background-color: rgb(49, 39, 61);
 }
 
