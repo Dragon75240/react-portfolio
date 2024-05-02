@@ -46,10 +46,12 @@ const Menubar = () => {
       link: "",
       children: [
         { key: "six", label: "6th Grade", link: "sixth-grade" },
-        { key: "seven", label: "Freshmen", link: "seventh-grade" },
-        { key: "eight", label: "Sophomore", link: "eight-grade" },
-        { key: "nine", label: "Junior", link: "ninth-grade" },
-        { key: "ten", label: "Senior", link: "tenth-grade" }
+        { key: "seven", label: "7th Grade", link: "seventh-grade" },
+        { key: "eight", label: "8th Grade", link: "eighth-grade" },
+        { key: "nine", label: "Freshmen", link: "ninth-grade" },
+        { key: "ten", label: "Sophomore", link: "tenth-grade" },
+        { key: "eleven", label: "Junior", link: "eleventh-grade" },
+        { key: "twelve", label: "Senior", link: "twelth-grade" }
       ],
     },
     {
