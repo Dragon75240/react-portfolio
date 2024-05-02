@@ -1,0 +1,13 @@
+.face {
+    background-image: url(../assets/images/face.jpg);
+    background-size: 200%;
+    background-position: center;
+    border-radius: 50%;
+    height: 50vh;
+    width: 50vh;
+}
+
+.aboutdiv {
+    display: flex;
+    align-items: end;
+}

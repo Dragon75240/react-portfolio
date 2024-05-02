@@ -8,9 +8,8 @@ const App = () => {
  return (
    <Router>
       <Menubar/>
-
       <Routes>
-        <Route path="/home" element={<Home/>}/>
+        <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<AboutMe />} />
       </Routes>
     </Router>

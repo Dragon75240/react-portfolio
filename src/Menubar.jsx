@@ -17,7 +17,7 @@ const Menubar = () => {
     {
       key: "cover",
       label: "Cover",
-      link: "home",
+      link: "",
     },
     {
       key: "aboutme",
