@@ -5,6 +5,8 @@
     border-radius: 50%;
     height: 50vh;
     width: 50vh;
+    margin: auto;
+    padding: 10px;
 }
 
 .aboutdiv {
