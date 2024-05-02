@@ -1,14 +1,14 @@
 import { DownOutlined } from "@ant-design/icons";
 import "./styles/Menubar.css";
 import { Menu, ConfigProvider, theme } from "antd";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Menubar = () => {
   const menuItems = [
     {
       key: "home",
       label: "Stevyn Shawcroft",
-      link: ""
+      link: "",
     },
     {
       type: "divider",
@@ -17,7 +17,7 @@ const Menubar = () => {
     {
       key: "cover",
       label: "Cover",
-      link: "home"
+      link: "home",
     },
     {
       key: "aboutme",
@@ -27,34 +27,34 @@ const Menubar = () => {
     {
       key: "hobbies",
       label: "Hobbies",
-      link: "hobbies"
+      link: "hobbies",
     },
     {
       key: "links",
       label: "Links",
-      link: "links"
+      link: "links",
     },
     {
       key: "path",
       label: "Pathways",
-      link: "pathways"
+      link: "pathways",
     },
     {
       key: "career",
-      icon: <DownOutlined/>,
+      icon: <DownOutlined />,
       label: "School Career",
       link: "",
       children: [
         { key: "six", label: "6th Grade", link: "sixth-grade" },
         { key: "seven", label: "7th Grade", link: "seventh-grade" },
         { key: "eight", label: "8th Grade", link: "eight-grade" },
-        { key: "nine", label: "9th Grade", link: "ninth-grade" }
+        { key: "nine", label: "9th Grade", link: "ninth-grade" },
       ],
     },
     {
       key: "skill",
       label: "Skills",
-      link: "skills"
+      link: "skills",
     },
   ];
 
@@ -78,12 +78,12 @@ const Menubar = () => {
     );
   };
 
-
-  return (<ConfigProvider
-    theme={{ algorithm: theme.darkAlgorithm }}>
-    <Menu mode="horizontal" className="menubar backdrop:inset-10">
-      {menuItems.map(renderMenuItem)}
-    </Menu></ConfigProvider>
+  return (
+    <ConfigProvider theme={{ algorithm: theme.darkAlgorithm }}>
+      <Menu mode="horizontal" className="menubar backdrop:inset-10">
+        {menuItems.map(renderMenuItem)}
+      </Menu>
+    </ConfigProvider>
   );
 };
 
