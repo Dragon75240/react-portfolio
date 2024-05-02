@@ -10,8 +10,8 @@ const App = () => {
       <Menubar/>
 
       <Routes>
-        <Route path="/home" element={<Home/>}/>
-        <Route path="/about" element={<AboutMe />} />
+        <Route path="/react-portfolio/home" element={<Home/>}/>
+        <Route path="/react-portfolio/about" element={<AboutMe />} />
       </Routes>
     </Router>
  );
