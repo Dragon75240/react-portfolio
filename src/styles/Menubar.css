@@ -1,17 +1,11 @@
-@font-face {
-  font-family: "Lato-Regular";
-  src: url("../assets/fonts/Lato-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .menubar {
-  font-family: "Lato-Regular", sans-serif;
+  font-family: "Lato", sans-serif;
   padding: 8px 12px 12px 12px;
   font-size: 18px;
 }
+
 .menubar *:focus {
-  outline: none;
+  outline: rgb(94, 87, 162);
 }
 
 .ant-menu-horizontal,
