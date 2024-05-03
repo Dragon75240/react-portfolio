@@ -11,6 +11,7 @@ const Menubar = () => {
       link: "",
     },
     {
+      key: "divider",
       type: "divider",
       style: { flexGrow: 1, order: 1 },
     },
@@ -45,13 +46,13 @@ const Menubar = () => {
       label: "School Career",
       link: "",
       children: [
-        { key: "six", label: "6th Grade", link: "grades/sixth-grade" },
-        { key: "seven", label: "7th Grade", link: "grades/seventh-grade" },
-        { key: "eight", label: "8th Grade", link: "grades/eighth-grade" },
-        { key: "nine", label: "Freshmen", link: "grades/ninth-grade" },
-        { key: "ten", label: "Sophomore", link: "grades/tenth-grade" },
-        { key: "eleven", label: "Junior", link: "grades/eleventh-grade" },
-        { key: "twelve", label: "Senior", link: "grades/twelth-grade" }
+        { key: "six", label: "6th Grade", link: "sixth-grade" },
+        { key: "seven", label: "7th Grade", link: "seventh-grade" },
+        { key: "eight", label: "8th Grade", link: "eighth-grade" },
+        { key: "nine", label: "Freshmen", link: "ninth-grade" },
+        { key: "ten", label: "Sophomore", link: "tenth-grade" },
+        { key: "eleven", label: "Junior", link: "eleventh-grade" },
+        { key: "twelve", label: "Senior", link: "twelth-grade" }
       ],
     },
     {

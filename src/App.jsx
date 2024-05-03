@@ -14,7 +14,7 @@ const App = () => {
         <Route path="/react-porfolio" element={<Home />} />
         <Route path="/about" element={<AboutMe />} />
         { /*  Grade Levels */ }
-        <Route path="/grades/sixth-grade" element={<SixthGrade />}/>
+        <Route path="/sixth-grade" element={<SixthGrade />}/>
       </Routes>
     </Router>
   );

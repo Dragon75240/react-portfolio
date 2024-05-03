@@ -1,6 +1,6 @@
 const SixthGrade = () => {
     return (
-        <div>div activity</div>
+        <div><p>div activity</p></div>
     );
 };
 
