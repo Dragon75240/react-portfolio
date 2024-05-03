@@ -1,7 +1,7 @@
-const sixth_grade = () => {
+const SixthGrade = () => {
     return (
         <div>div activity</div>
     );
 };
 
-export default sixth_grade;
+export default SixthGrade;
